@@ -230,3 +230,9 @@
 .unit{animation:unitIn .45s cubic-bezier(.2,.8,.2,1) both}
 @keyframes unitIn{from{opacity:0;transform:scale(.86)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.unit{animation:none}}
+
+/* на телефоне табличка параметров не должна прятаться под нижней полосой */
+@media (max-width:760px){
+  .hero{padding-bottom:72px}
+  .plate__c b{font-size:1.1rem}
+}
